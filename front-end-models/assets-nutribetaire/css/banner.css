@@ -1,0 +1,48 @@
+.banner{
+  position: relative;
+}
+
+.banner_box{
+  position: absolute;
+  
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  
+}
+
+.banner_title{
+  color: #fffffe;
+  background-color: #09331735;
+  padding: 5rem;
+  vertical-align: middle;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 2px 4px 4px#2c3830;
+  letter-spacing: .25rem;
+  line-height: 1.5em;
+}
+
+.banner_img{
+  height:calc(100vh - 72px);
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  background:url("../../assets-nutribetaire/img/banner.jpg") no-repeat center / cover;
+}
+
+@media screen and (min-width:0) {
+  .banner_title{
+    font-size: 5vw;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .banner_title{
+    font-size: 3vw;
+  }
+}

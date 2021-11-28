@@ -1,0 +1,91 @@
+.who-we-are{
+  text-align: center;
+  background-color: #fff0d8;
+  padding-bottom: 5%;
+}
+
+.who-we-are_title{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2.4375rem ;
+  padding: 2.5%;
+  color: #ad1818;
+
+}
+
+.who-we-are_description{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #4d2e00;
+  padding-bottom: 2.5%;
+
+}
+.people_block{
+display:flex;
+justify-content: space-around;
+margin: 0 15%;
+}
+
+
+
+.person{
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.person_image{
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.person_text{
+  height: 100px;
+  display: flex;
+  vertical-align: text-top;
+  flex-direction: column;
+  
+}
+
+.person_image--gilmar{
+  background-image: url('../../assets-nutribetaire/img/people/Gilmar.jpg');
+}
+.person_image--walter{
+  background-image: url('../../assets-nutribetaire/img/people/Walter.jpg');
+}
+
+.person_name{
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #ad1818;
+  text-transform: uppercase;
+
+}
+
+.person_role{
+   letter-spacing: .25rem;
+   line-height: 1.5rem;
+   
+}
+
+/* RESPOSIVITY CONFIGURATION */
+@media screen and (min-width: 0) {
+  .people_block{
+    flex-direction:column ;
+  }
+
+  .person{
+    padding: 2.5rem 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .people_block{
+    flex-direction: row ;
+  }
+}
